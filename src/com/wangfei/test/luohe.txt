@@ -1,0 +1,351 @@
+1.查询用户GetCustomerByCode
+GetCustomerByCode
+
+测试窗体只能用于来自本地计算机的请求。
+SOAP 1.1
+以下是 SOAP 1.1 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: "http://tempuri.org/GetCustomerByCode"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetCustomerByCode xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <customerCode xmlns="">string</customerCode>
+    </GetCustomerByCode>
+  </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetCustomerByCodeResponse xmlns="http://tempuri.org/">
+      <GetCustomerByCodeResult xmlns="">string</GetCustomerByCodeResult>
+    </GetCustomerByCodeResponse>
+  </soap:Body>
+</soap:Envelope>
+SOAP 1.2
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <GetCustomerByCode xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <customerCode xmlns="">string</customerCode>
+    </GetCustomerByCode>
+  </soap12:Body>
+</soap12:Envelope>
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <GetCustomerByCodeResponse xmlns="http://tempuri.org/">
+      <GetCustomerByCodeResult xmlns="">string</GetCustomerByCodeResult>
+    </GetCustomerByCodeResponse>
+  </soap12:Body>
+</soap12:Envelope>
+
+
+2.GetPayDetail
+
+测试
+
+测试窗体只能用于来自本地计算机的请求。
+SOAP 1.1
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: "http://tempuri.org/GetPayDetail"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetPayDetail xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <customerCode xmlns="">string</customerCode>
+    </GetPayDetail>
+  </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetPayDetailResponse xmlns="http://tempuri.org/">
+      <GetPayDetailResult xmlns="">string</GetPayDetailResult>
+    </GetPayDetailResponse>
+  </soap:Body>
+</soap:Envelope>
+SOAP 1.2
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <GetPayDetail xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <customerCode xmlns="">string</customerCode>
+    </GetPayDetail>
+  </soap12:Body>
+</soap12:Envelope>
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <GetPayDetailResponse xmlns="http://tempuri.org/">
+      <GetPayDetailResult xmlns="">string</GetPayDetailResult>
+    </GetPayDetailResponse>
+  </soap12:Body>
+</soap12:Envelope>
+
+
+3.
+Pay
+
+测试
+
+测试窗体只能用于来自本地计算机的请求。
+SOAP 1.1
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: "http://tempuri.org/Pay"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Pay xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <cashierID xmlns="">int</cashierID>
+      <customerCode xmlns="">string</customerCode>
+      <payAmount xmlns="">decimal</payAmount>
+      <outTradeNo xmlns="">string</outTradeNo>
+    </Pay>
+  </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PayResponse xmlns="http://tempuri.org/">
+      <PayResult xmlns="">string</PayResult>
+    </PayResponse>
+  </soap:Body>
+</soap:Envelope>
+SOAP 1.2
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <Pay xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <cashierID xmlns="">int</cashierID>
+      <customerCode xmlns="">string</customerCode>
+      <payAmount xmlns="">decimal</payAmount>
+      <outTradeNo xmlns="">string</outTradeNo>
+    </Pay>
+  </soap12:Body>
+</soap12:Envelope>
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <PayResponse xmlns="http://tempuri.org/">
+      <PayResult xmlns="">string</PayResult>
+    </PayResponse>
+  </soap12:Body>
+</soap12:Envelope>
+
+4.
+CancelPay
+
+测试
+
+测试窗体只能用于来自本地计算机的请求。
+SOAP 1.1
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: "http://tempuri.org/CancelPay"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <CancelPay xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <customerCode xmlns="">string</customerCode>
+      <payAmount xmlns="">decimal</payAmount>
+      <outTradeNo xmlns="">string</outTradeNo>
+      <payRecordBankID xmlns="">int</payRecordBankID>
+    </CancelPay>
+  </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <CancelPayResponse xmlns="http://tempuri.org/">
+      <CancelPayResult xmlns="">string</CancelPayResult>
+    </CancelPayResponse>
+  </soap:Body>
+</soap:Envelope>
+SOAP 1.2
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <CancelPay xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <customerCode xmlns="">string</customerCode>
+      <payAmount xmlns="">decimal</payAmount>
+      <outTradeNo xmlns="">string</outTradeNo>
+      <payRecordBankID xmlns="">int</payRecordBankID>
+    </CancelPay>
+  </soap12:Body>
+</soap12:Envelope>
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <CancelPayResponse xmlns="http://tempuri.org/">
+      <CancelPayResult xmlns="">string</CancelPayResult>
+    </CancelPayResponse>
+  </soap12:Body>
+</soap12:Envelope>
+
+5.
+CheckBack
+
+测试
+
+测试窗体只能用于来自本地计算机的请求。
+SOAP 1.1
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: "http://tempuri.org/CheckBack"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <CheckBack xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <checkDate xmlns="">dateTime</checkDate>
+      <checkData xmlns="">string</checkData>
+    </CheckBack>
+  </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <CheckBackResponse xmlns="http://tempuri.org/">
+      <CheckBackResult xmlns="">string</CheckBackResult>
+    </CheckBackResponse>
+  </soap:Body>
+</soap:Envelope>
+SOAP 1.2
+
+以下是 SOAP 1.2 请求和响应示例。所显示的占位符需替换为实际值。
+
+POST /OuterPayService.asmx HTTP/1.1
+Host: 218.244.140.43
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <CheckBack xmlns="http://tempuri.org/">
+      <keyName xmlns="">string</keyName>
+      <checkDate xmlns="">dateTime</checkDate>
+      <checkData xmlns="">string</checkData>
+    </CheckBack>
+  </soap12:Body>
+</soap12:Envelope>
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <CheckBackResponse xmlns="http://tempuri.org/">
+      <CheckBackResult xmlns="">string</CheckBackResult>
+    </CheckBackResponse>
+  </soap12:Body>
+</soap12:Envelope>
